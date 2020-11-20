@@ -1,7 +1,7 @@
 FROM node:12-slim
 
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 LABEL repository="https://github.com/serverless/github-action"
 LABEL homepage="https://github.com/serverless/github-action"
 LABEL maintainer="Serverless, Inc. <hello@serverless.com> (https://serverless.com)"
@@ -11,5 +11,5 @@ LABEL "com.github.actions.description"="Wraps the Serverless Framework to enable
 LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="red"
 
-RUN npm i -g serverless@2.1.0
+RUN npm i -g serverless@~2.x
 ENTRYPOINT ["serverless"]
