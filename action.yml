@@ -1,0 +1,12 @@
+# action.yml
+name: 'Serverless Action Support'
+description: 'Wraps the Serverless Framework to enable common Serverless commands.'
+icon: 'zap'
+color: 'red'
+runs: 
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  color: 'red'
+  icon: 'cpu'
+  
